@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-image: url('https://w0.peakpx.com/wallpaper/878/548/HD-wallpaper-summer-clouds-skyscapes-landscapes-summer-nature-clouds-swimming-pools.jpg');
+    /*url('https://w0.peakpx.com/wallpaper/895/55/HD-wallpaper-rain-lightning-rainy-city-rain-effects-day-window-street.jpg');*/
+    /*url('https://images.unsplash.com/photo-1602646658950-6409816497e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80');*/
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{ 
+    background-color: rgba(36, 51, 54, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgb(130, 213, 219);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family:'Roboto', sans-serif;
+}
+
+.card__title{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.card__weather{
+    text-align: center;
+    grid-column: span 2;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card__info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card__description{
+    margin-bottom: 20px;
+}
+
+.card__list{
+display: grid;
+gap: 7px;
+}
+
+.card__item{
+color: antiquewhite;
+}
+
+.card__span{
+color: aqua;
+}
+
+.card__temperature{
+grid-column: span 2;
+text-align: center;
+margin-bottom: 20px;
+margin-top: 40px;
+}
+
+.card__button{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight:700;
+    cursor: pointer;
+    transition: transform 100ms ease;
+    margin-bottom: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+}
+
+.card__button:hover{
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    transition: transform 100ms ease;
+}
+
+
+
+.load{
+    color:black;
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 200px;
+    font-size: 10px;
+    }
+    .card__title{
+        font-size: 30px;
+    }
+
+    .card__icon{
+        margin-top: -30px;
+    }
+
+    .card__temperature{
+        margin-top: -20px;
+        font-size:18px ;
+    }
+    .card__button{
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+        margin-top: -30px;
+    }
+
+}
